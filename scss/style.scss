@@ -1,0 +1,19 @@
+body{
+    header{
+        nav.menubar{
+            width:1000px;
+            background-color:white;
+            display:flex;
+            justify-content: space-around;
+            img#header_icon{
+                width:10%;
+            }
+            ul{
+                width:100%;
+                li{
+                    list-style: none;
+                }
+            }
+        }
+    }
+}

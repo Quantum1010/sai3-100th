@@ -1,0 +1,15 @@
+body header nav.menubar {
+  width: 1000px;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+}
+body header nav.menubar img#header_icon {
+  width: 10%;
+}
+body header nav.menubar ul {
+  width: 100%;
+}
+body header nav.menubar ul li {
+  list-style: none;
+}/*# sourceMappingURL=style.css.map */
