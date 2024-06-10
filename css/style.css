@@ -1,10 +1,15 @@
+@charset "UTF-8";
+body {
+  font-family: "游ゴシック";
+  color: black;
+}
 body header {
   padding-top: 90px;
 }
 body header nav.menubar {
   width: 100%;
   height: 80px;
-  background-color: white;
+  background-color: rgb(203, 255, 160);
   display: flex;
   position: fixed;
   top: 0;
@@ -21,6 +26,28 @@ body header nav.menubar ul {
 }
 body header nav.menubar ul li {
   list-style: none;
-  margin-right: 20px;
-  margin-left: 20px;
-}/*# sourceMappingURL=style.css.map */
+  font-size: 20px;
+  margin-right: 25px;
+  margin-left: 25px;
+  margin-top: 9px;
+}
+body header nav.menubar ul li a {
+  text-decoration: none;
+  color: black;
+  position:relative;
+}
+body header nav.menubar ul li a::after{
+  position:absolute;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #000000;
+  bottom: -1px;
+  transform: scale(0,1);
+  transform-origin: center top;
+  transition: 0.2s;
+}
+body header nav.menubar ul li a:hover::after{
+  transform: scale(1,1);
+}
